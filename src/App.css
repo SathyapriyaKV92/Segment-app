@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  /* background-color: rgb(213, 210, 210 ,0.5); */
+  background-image: linear-gradient(rgb(228, 227, 227) 100%,transparent 30%);
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+.btn{
+  background-color: transparent;
+  border: 2px solid gray;
+  padding: 0.5rem;
+  color: gray;
+  margin: 50px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  &:hover{
+    background-color: azure;
+  }
+}
+.modal{
+  position: fixed;
+  top:0;
+  background-color: white;
+  height: 100%;
+  left: 50%;
+  width: 50%;
+}
+.modal-header{
+  background-color: rgb(35, 138, 138);
+  height: 10%;
+  p{
+   padding: 25px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.modal_body{
+  height: 75%;
+  .segment_name{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    input{
+    height: 40px;
+    padding-left: 30px;
+    width: 70%;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  p{
+    margin: 30px;
+  }
+  
+  .schemas-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: aquamarine; */
+   margin:10px 0;
+   }
+   select{
+    width: 70%;
+    height: 40px;
+    padding-left: 30px;
+    margin-left: 30px;
+  }
+  button{
+    background-color: aquamarine;
+    font-size: large;
+    width: 20px;
+    margin-left: 20px;
+  }
+  a{
+   margin: 20px;
+   display: block;
+   color:  rgb(35, 138, 138);
+   text-decoration:none;
+  
+  }
+}
+
+.footer{
+  background-color:lightgrey;
+  height: 10%;
+  .save{
+    background-color: rgb(35, 138, 138);
+    margin: 20px;
+    height: 30px;
+    border-radius: 5px;
+    width: 20%;
+
+  }
+  .cancel{
+    background-color: white;
+    color: red;
+    margin: 20px;
+    height: 30px;
+    border-radius: 5px;
+    width: 10%;
   }
 }
